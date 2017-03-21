@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#242729"
+    android:layout_gravity="center"
+    android:id="@+id/lin_lay"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/icon_layout"
+            android:layout_width="450dp"
+            android:layout_height="450dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="290dp"
+                android:layout_height="290dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/bola_del_futuro">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/icon_mask"
+                android:layout_width="3000dp"
+                android:layout_height="3000dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/circle"
+                android:scaleType="fitXY" >
+            </ImageView>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="P"
+            android:textSize="200dp"
+            android:textColor="@color/Primary"/>
+    </FrameLayout>
+
+</LinearLayout>
